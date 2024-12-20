@@ -1,9 +1,9 @@
 import React from "react";
 import { toast } from "react-toastify";
 import CorrectWordsList from "./CorrectWordsList";
-import { Word } from "../App";
 import LowerBoardComponent from "./LowerBoardComponent";
 import "./GameBoard.css";
+import { Word } from "../models/Word";
 
 
 interface GameBoardProps {

@@ -8,10 +8,13 @@ import CorrectWordsList from "./components/CorrectWordsList";
 import GameBoard from "./components/GameBoard";
 import Tab from "react-bootstrap/Tab";
 import { Tabs } from "react-bootstrap";
-import { gameWords1, gameWords2, gameWords3 } from "./words/gameWordsConfig";
 import { Word } from "./models/Word";
+import { gameWords1, gameWords2, gameWords3 } from "./words/gameWordsConfig";
+
+
 
 function App() {
+  
 
   const [mistakesRemaining, setMistakesRemaining] = useState(4);
   const [words, setWords] = useState<Word[]>();
@@ -60,6 +63,7 @@ function App() {
       setCorrectWords([...correctWords, ...selectedWords]);
       setWords(words?.filter((word) => !selectedWords.includes(word)));
       setSelectedWords([]);
+      console.log(words?.length);
       if (words?.length === 4) {
         toast.success("You have completed the game!");
         setGameOver(true);

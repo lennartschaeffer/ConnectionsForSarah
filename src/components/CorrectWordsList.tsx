@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, Badge } from 'react-bootstrap';
+import { Badge } from 'react-bootstrap';
 import { Word } from '../models/Word';
 
 interface CorrectWordsListProps {

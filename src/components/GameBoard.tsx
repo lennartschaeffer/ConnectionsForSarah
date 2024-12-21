@@ -34,9 +34,7 @@ const GameBoard: React.FC<GameBoardProps> = ({
         {correctWords.length > 0 ? (
           <CorrectWordsList
             correctWords={correctWords}
-            bgColour="bg-success"
             textColour="text-light"
-            badgeColour="dark"
           />
         ) : (
           ""

@@ -35,6 +35,7 @@ function App() {
 
   const handleChangeWords = (e: string | null) => {
     if (e === "game1") {
+      handleRestart();
       setWords(shuffle(gameWords1));
       setSelectedTab("game1");
     } else if (e === "game2") {
@@ -42,6 +43,7 @@ function App() {
       setWords(shuffle(gameWords2));
       setSelectedTab("game2");
     } else if (e === "game3") {
+      handleRestart();
       setWords(shuffle(gameWords3));
       setSelectedTab("game3");
     }
@@ -128,9 +130,7 @@ function App() {
                     ? gameWords2
                     : gameWords3
                 }
-                bgColour="bg-dark"
                 textColour="text-light"
-                badgeColour="success"
               />
               <button
                 className="btn btn-light btn-lg w-100"
@@ -154,7 +154,7 @@ function App() {
               variant="pills"
               justify
             >
-              <Tab eventKey="game1" title="Game 1">
+              <Tab eventKey="game1" title="Game 1" >
                 <GameBoard
                   words={words}
                   correctWords={correctWords}

@@ -49,7 +49,7 @@ const CorrectWordsList: React.FC<CorrectWordsListProps> = ({
           <h5 className={`text-center mb-4 ${textColour}`}>
             <b>{category}</b>
           </h5>
-          <div className="d-flex flex-column flex-md-row justify-content-center gap-2">
+          <div className="d-flex flex-column flex-md-row justify-content-center gap-1">
             {correctWords
               .filter((word) => word.category === category)
               .map((word, wordIndex) => (

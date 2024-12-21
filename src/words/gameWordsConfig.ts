@@ -48,10 +48,10 @@ export const gameWords2: Word[] = [
   { word: "GUESS THE COUNTRY", category: "GAMES WE PLAY", difficulty: 2 },
   { word: "GLOBLE", category: "GAMES WE PLAY", difficulty: 2 },
   { word: "GUESS THE PERSON", category: "GAMES WE PLAY", difficulty: 2 },
-  { word: "COUNTRY MUSIC", category: "POOR TASTE", difficulty: 4 },
-  { word: "TWILIGHT", category: "POOR TASTE", difficulty: 4 },
-  { word: "ASMR", category: "POOR TASTE", difficulty: 4 },
-  { word: "BRENT RIVERA", category: "POOR TASTE", difficulty: 4 },
+  { word: "COUNTRY MUSIC", category: "BAD TAKES", difficulty: 4 },
+  { word: "TWILIGHT", category: "BAD TAKES", difficulty: 4 },
+  { word: "ASMR", category: "BAD TAKES", difficulty: 4 },
+  { word: "BRENT RIVERA", category: "BAD TAKES", difficulty: 4 },
 ];
 
 export const gameWords3: Word[] = [

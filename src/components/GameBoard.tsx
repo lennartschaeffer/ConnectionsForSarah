@@ -28,7 +28,7 @@ const GameBoard: React.FC<GameBoardProps> = ({
   mistakesRemaining,
 }) => {
   return (
-    <div className="gameBoard ">
+    <div className="gameBoard W-100">
       
       <div className="row">
         {correctWords.length > 0 ? (

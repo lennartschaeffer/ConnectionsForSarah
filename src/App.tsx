@@ -12,10 +12,8 @@ import { Word } from "./models/Word";
 import { gameWords1, gameWords2, gameWords3 } from "./words/gameWordsConfig";
 
 
-
 function App() {
   
-
   const [mistakesRemaining, setMistakesRemaining] = useState(4);
   const [words, setWords] = useState<Word[]>();
   const [selectedWords, setSelectedWords] = useState<Word[]>([]);
@@ -99,7 +97,7 @@ function App() {
 
   return (
     <div
-      className={`vh-100 vw-100 ${
+      className={`min-vh-100 w-100 ${
         gameResult === "won"
           ? "bg-success"
           : gameResult === "lost"
@@ -119,7 +117,7 @@ function App() {
             }`}
           >
             <div className="col-12 d-flex flex-column align-items-center">
-              <h1 className="text-light text-center mb-4 mt-5">
+              <h1 className="endGameText text-light text-center mb-4 mt-5">
                 <b>
                   {gameResult === "won"
                     ? "Congratulations! You won!"
@@ -138,7 +136,7 @@ function App() {
                 textColour="text-light"
               />
               <button
-                className="btn btn-light btn-lg w-100"
+                className="btn btn-light btn-lg w-100 mb-2"
                 onClick={handleRestart}
               >
                 <b>Play Again</b>

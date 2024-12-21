@@ -59,6 +59,11 @@ function App() {
 
   const checkIfWordsMatch = () => {
     const selectedWordsCategories = selectedWords.map((word) => word.category);
+    //if there are not exactly 4 words selected, return
+    if (selectedWords.length !== 4) {
+      toast.error("You must select 4 words");
+      return;
+    }
     const uniqueCategories = new Set(selectedWordsCategories);
     if (uniqueCategories.size === 1) {
       toast.success("Correct!");
@@ -113,7 +118,7 @@ function App() {
                 : "bg-regular"
             }`}
           >
-            <div className="col-12">
+            <div className="col-12 d-flex flex-column align-items-center">
               <h1 className="text-light text-center mb-4 mt-5">
                 <b>
                   {gameResult === "won"
